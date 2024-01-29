@@ -1,0 +1,33 @@
+@font-face {
+    font-family: Lato;
+    src: url(Lato/Lato-Regular.ttf);
+}
+.left-side{
+    flex: 1
+}
+.right-side{
+    background-color: lightpink;
+    flex: 1
+}
+.body-container{
+    display: flex;
+    margin-top: 100px;
+}
+
+.left-side > h1{
+    font-family: 'Playfair Display', serif;
+    color: black;
+    font-size: 40px;
+    margin-bottom: 10px;
+
+}
+.left-side > p{
+
+}
+
+@media(max-width: 768px)
+{
+    .body-container{
+        flex-direction: column-reverse;
+    }
+}

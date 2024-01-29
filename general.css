@@ -1,0 +1,10 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: Lato;
+    color: rgb(128, 126, 126);
+    background-color: floralwhite;
+    padding: 20px 70px;
+}

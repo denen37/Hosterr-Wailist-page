@@ -1,0 +1,85 @@
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-section{
+    display: flex;
+    align-items: center;
+}
+.middle-section{
+}
+.right-section{
+    
+}
+
+.navbar a{
+    text-decoration: none;
+    margin-left: 5px;
+    margin-right: 5px;
+    cursor:pointer;
+    padding: 8px 3px;
+    transition: border-bottom 0.3s color 0.3s;
+}
+
+.navbar a:hover{
+    color: blue;
+    border-bottom: 2px solid blue;
+}
+
+.navbar button{
+    padding: 8px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.join-btn{
+    color: white;
+    background-color: blue;
+    font-family: Lato;
+}
+.join-btn:hover{
+    opacity: 0.7;
+}
+.join-btn:active{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.signin-btn{
+    background-color: floralwhite;
+    font-family: Lato;
+}
+.signin-btn:hover{
+    background-color: lightgray;
+}
+.signin-btn:active{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+.hiring-btn{
+    font-size: 0.7rem;
+    color: white;
+    padding: 4px 6px;
+    margin-left: 10px;
+    border-radius: 10px;
+    background-image: linear-gradient(to right, #EAA356, #EA5772);
+}
+.hiring-btn:hover{
+    box-shadow: 0 0 3px rgba(0, 0, 0, 0.5);
+}
+
+.menu-btn{
+    display: none;
+}
+@media (max-width: 768px){
+    /*Apply this CSS*/
+    .middle-section{
+        display: none;
+    }
+    .right-section{
+        display: none;
+    }
+    .menu-btn{
+        display: block;
+    }
+}
