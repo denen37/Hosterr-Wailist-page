@@ -25,9 +25,50 @@
 
 }
 
+.grid-container{
+    display: grid;
+    grid-template-columns: 200px 100px;
+    margin-top: 15px;
+    column-gap: 10px;
+    row-gap: 12px;
+}
+
+.grid-container>button{
+    color: white;
+    background-color: blue;
+    font-family: Lato;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+.grid-container>input{
+    border: none;
+    border-radius: 3px;
+    padding: 10px 15px;
+}
+
+.grid-container>input:focus{
+    outline: none;
+    border: 1px solid blue;
+    box-shadow: 0 0 5px rgb(84, 84, 252);
+}
+
+.grid-container>input::placeholder{
+    font-family: Lato;
+}
+
 @media(max-width: 768px)
 {
     .body-container{
         flex-direction: column-reverse;
+    }
+}
+
+@media(max-width: 480px)
+{
+    .grid-container{
+        grid-template-columns: 1fr;
     }
 }
