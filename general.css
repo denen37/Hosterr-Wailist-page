@@ -8,3 +8,17 @@ body{
     background-color: floralwhite;
     padding: 20px 70px;
 }
+
+@media (max-width: 768px)
+{
+    body{
+        padding: 20px;
+    }
+}
+
+@media (max-width: 480px)
+{
+    body{
+        padding: 15px 10px;
+    }
+}
